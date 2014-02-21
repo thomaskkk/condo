@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/doctrine-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/incenteev/composer-parameter-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/kriswallsmith/assetic" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/sensio/distribution-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/sensio/framework-extra-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/sensio/generator-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/symfony/assetic-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/symfony/icu" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/symfony/monolog-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/symfony/swiftmailer-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/symfony/symfony" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/twig/extensions" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/twig/twig" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/composer.phar" />
+          <root url="phar://$MODULE_DIR$/www/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
+          <root url="phar://$MODULE_DIR$/www/composer.phar" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/composer.phar" />
+          <root url="phar://$MODULE_DIR$/www/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar" />
+          <root url="phar://$MODULE_DIR$/www/composer.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/cache" />
+          <root url="file://$MODULE_DIR$/www/vendor/composer" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/assetic-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/icu" />
+          <root url="file://$MODULE_DIR$/www/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/symfony" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/www/vendor/jdorn/sql-formatter" />
+          <root url="file://$MODULE_DIR$/www/vendor/twig/twig" />
+          <root url="file://$MODULE_DIR$/www/vendor/sensio/distribution-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/collections" />
+          <root url="file://$MODULE_DIR$/www/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/swiftmailer-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/doctrine-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/sensio/generator-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/twig/extensions" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/annotations" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/www/vendor/kriswallsmith/assetic" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/dbal" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/www/vendor/incenteev/composer-parameter-handler" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/monolog-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/sensio/framework-extra-bundle" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/cache" />
+          <root url="file://$MODULE_DIR$/www/vendor/composer" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/assetic-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/icu" />
+          <root url="file://$MODULE_DIR$/www/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/symfony" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/lexer" />
+          <root url="file://$MODULE_DIR$/www/vendor/jdorn/sql-formatter" />
+          <root url="file://$MODULE_DIR$/www/vendor/twig/twig" />
+          <root url="file://$MODULE_DIR$/www/vendor/sensio/distribution-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/psr/log" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/collections" />
+          <root url="file://$MODULE_DIR$/www/vendor/monolog/monolog" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/swiftmailer-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/doctrine-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/sensio/generator-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/twig/extensions" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/annotations" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/orm" />
+          <root url="file://$MODULE_DIR$/www/vendor/kriswallsmith/assetic" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/dbal" />
+          <root url="file://$MODULE_DIR$/www/vendor/doctrine/common" />
+          <root url="file://$MODULE_DIR$/www/vendor/incenteev/composer-parameter-handler" />
+          <root url="file://$MODULE_DIR$/www/vendor/symfony/monolog-bundle" />
+          <root url="file://$MODULE_DIR$/www/vendor/sensio/framework-extra-bundle" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

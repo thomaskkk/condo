@@ -1,0 +1,9 @@
+tk_condo_home:
+    resource: "@TKCondoHomeBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+tk_condo_moradores:
+    resource: "@TKCondoMoradoresBundle/Controller/"
+    type:     annotation
+    prefix:   /

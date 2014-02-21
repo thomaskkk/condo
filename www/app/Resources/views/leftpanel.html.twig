@@ -1,0 +1,30 @@
+<aside id="left-panel">
+
+    {# User info #}
+    <div class="login-info">
+                    <span>
+                        {% image '@TKCondoHomeBundle/Resources/public/img/avatars/sunny.png' %}
+                        <img src="{{ asset_url }}" alt="me" class="online" />
+                        {% endimage %}
+                        <a href="javascript:void(0);" id="show-shortcut">
+                            john.doe <i class="fa fa-angle-down"></i>
+                        </a>
+                    </span>
+    </div>
+    {# end user info #}
+
+    {# Menu #}
+    <nav>
+        <ul>
+            <li class="">
+                <a href="/" title="{{ path('home') }}"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Home</span></a>
+            </li>
+            <li class="">
+                <a href="{{ path('morador') }}" title="Moradores"><i class="fa fa-lg fa-fw fa-male"></i> <span class="menu-item-parent">Moradores</span></a>
+            </li>
+        </ul>
+    </nav>
+    {# End menu #}
+    <span class="minifyme"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+
+</aside>

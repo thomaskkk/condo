@@ -1,0 +1,143 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+            <h1 class="page-title txt-color-blueDark">
+                <i class="fa fa-male fa-fw "></i>
+                Moradores
+                <span>>
+				Adicionar
+			    </span>
+            </h1>
+        </div>
+    </div>
+
+    <section id="widget-grid" class="">
+        {# start row #}
+        <div class="row">
+            {# start Widget #}
+            <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                {# Widget ID (each widget will need unique ID) #}
+                <div class="jarviswidget" id="wid-id-0" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+                    {# widget options:
+                    usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+
+                    data-widget-colorbutton="false"
+                    data-widget-editbutton="false"
+                    data-widget-togglebutton="false"
+                    data-widget-deletebutton="false"
+                    data-widget-fullscreenbutton="false"
+                    data-widget-custombutton="false"
+                    data-widget-collapsed="true"
+                    data-widget-sortable="false"#}
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+                        <h2>
+                        Adicionar Moradores
+                        </h2>
+                    </header>
+                    <div>
+                        {# widget edit box #}
+                        <div class="jarviswidget-editbox">
+                            {# This area used as dropdown edit box #}
+                        </div>
+                        {# end widget edit box #}
+                        {# widget content #}
+                        <div class="widget-body no-padding">
+                            {{ form_start(form, {'attr': {'class': 'smart-form', 'novalidate': 'novalidate'}}) }}
+                            {#<header></header>#}
+                            <fieldset>
+                                <div>
+                                <section>
+                                    <label class="input">
+                                        <i class="icon-prepend fa fa-user"></i>
+                                        {{ form_errors(form.nome) }}
+                                        {{ form_widget(form.nome) }}
+                                    </label>
+                                </section>
+                                </div>
+                                <div class="row">
+                                    <section class="col col-6">
+                                        <label class="input">
+                                        <i class="icon-append fa fa-question-circle"></i>
+                                        {{ form_errors(form.rg) }}
+                                        {{ form_widget(form.rg) }}
+                                        <b class="tooltip tooltip-bottom-right">
+                                            <i class="fa fa-warning txt-color-teal"></i>
+                                            Some helpful information</b>
+                                        </label>
+                                    </section>
+                                    <section class="col col-6">
+                                        <label class="input">
+                                        <i class="icon-append fa fa-question-circle"></i>
+                                        {{ form_errors(form.cpf) }}
+                                        {{ form_widget(form.cpf) }}
+                                        <b class="tooltip tooltip-bottom-right">
+                                            <i class="fa fa-warning txt-color-teal"></i>
+                                            Some helpful information</b>
+                                        </label>
+                                    </section>
+                                </div>
+                                <div class="row">
+                                    <section class="col col-4">
+                                        <label class="input">
+                                            <i class="icon-append fa fa-calendar"></i>
+                                            {{ form_errors(form.dataNascimento) }}
+                                            {{ form_widget(form.dataNascimento) }}
+                                        </label>
+                                    </section>
+                                    <section class="col col-4">
+                                        <label class="select">
+                                            {{ form_errors(form.sexo) }}
+                                            {{ form_widget(form.sexo) }}
+                                        </label>
+                                    </section>
+                                    <section class="col col-4">
+                                        <label class="input">
+                                            <i class="icon-append fa fa-question-circle"></i>
+                                            {{ form_errors(form.telefoneCelular) }}
+                                            {{ form_widget(form.telefoneCelular) }}
+                                            <b class="tooltip tooltip-bottom-right">
+                                                <i class="fa fa-warning txt-color-teal"></i>
+                                                Some helpful information</b>
+                                        </label>
+                                    </section>
+                                </div>
+                                <div>
+                                    <section>
+                                        <div class="input input-file">
+                                            <span class="button">
+                                                {{ form_errors(form.foto) }}
+                                                {{ form_widget(form.foto) }}
+                                                Selecionar arquvivo
+                                           </span>
+                                            <input type="text" placeholder="Faça upload do arquivo" readonly="">
+                                        </div>
+                                    </section>
+                                </div>
+                            </fieldset>
+                            <footer>
+                                {{ form_widget(form.submit) }}
+                                {#<div class="input input-file">
+                                    <span class="button"><input id="file2" type="file" name="file2" onchange="this.parentNode.nextSibling.value = this.value">Browse</span><input type="text" placeholder="Include some files" readonly="">
+                                </div>#}
+                                {#<button type="submit" class="btn btn-primary">
+                                    Adicionar
+                                </button>#}
+                            </footer>
+                            {{ form_end(form) }}
+
+
+
+                        </div>
+                        {# end widget content #}
+                    </div>
+                </div>
+            </article>
+            {# end Widget #}
+        </div>
+        {# end row #}
+    </section>
+    <a class="btn btn-danger btn-lg" href="{{ path('morador') }}"><i class="fa fa-arrow-circle-o-left"></i> Cancelar e retornar a lista</a>
+{% endblock %}

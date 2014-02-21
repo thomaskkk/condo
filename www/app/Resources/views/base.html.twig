@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        {% block stylesheets %}
+
+            {#&#123;&#35; Bootstrap CSS &#35;&#125;#}
+            {#{% stylesheets '@bootstrap_less' combine=true %}#}
+                {#<link href="{{ asset_url }}" type="text/css" rel="stylesheet">#}
+            {#{% endstylesheets %}#}
+
+            {# Bootstrap Template CSS #}
+            {% stylesheets
+                '@bootstrap_less'
+                'bundles/tkcondohome/css/*' filter='cssrewrite' combine=true %}
+                <link href="{{ asset_url }}" type="text/css" rel="stylesheet">
+            {% endstylesheets %}
+
+            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+        {% endblock %}
+
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+
+    </head>
+    <body>
+
+        {% include "::header.html.twig" %}
+
+        {% include "::leftpanel.html.twig" %}
+
+        {# MAIN PANEL #}
+        <div id="main" role="main">
+
+            {#<div id="ribbon">
+                <ol class="breadcrumb">
+                    <!-- This is auto generated -->
+                </ol>
+            </div>#}
+
+            {# MAIN CONTENT #}
+            <div id="content">
+                {% block body %}{% endblock %}
+            </div>
+
+        </div>
+        {# MAIN PANEL #}
+
+        {% block javascripts %}
+
+            {# Bootstrap JS #}
+            {% javascripts
+                '@jquery_js'
+                '@jqueryui_js'
+                '@bootstrap_js'
+                '@TKCondoHomeBundle/Resources/public/js/default/*' filter='?yui_js' combine=true %}
+                <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+
+            <!--[if IE 7]>
+
+            <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+            <![endif]-->
+
+            {# Bootstrap Template JS #}
+            {% javascripts
+                '@TKCondoHomeBundle/Resources/public/js/app.js'
+                '@TKCondoHomeBundle/Resources/public/js/datatables/plugins/jquery.dataTables-cust.min.js'
+                '@TKCondoHomeBundle/Resources/public/js/datatables/plugins/ColReorder.min.js'
+                '@TKCondoHomeBundle/Resources/public/js/datatables/plugins/FixedColumns.min.js'
+                '@TKCondoHomeBundle/Resources/public/js/datatables/plugins/ColVis.min.js'
+                '@TKCondoHomeBundle/Resources/public/js/datatables/plugins/ZeroClipboard.js'
+                '@TKCondoHomeBundle/Resources/public/js/datatables/plugins/TableTools.min.js'
+                '@TKCondoHomeBundle/Resources/public/js/datatables/plugins/DT_bootstrap.js'
+                '@TKCondoHomeBundle/Resources/public/js/datatables/datatables.js' filter='?yui_js' combine=true %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+
+            {# Your GOOGLE ANALYTICS CODE Below
+            <script type="text/javascript">
+
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+                _gaq.push(['_trackPageview']);
+
+                (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+
+            </script> #}
+        {% endblock %}
+    </body>
+</html>
